@@ -1,0 +1,13 @@
+<?php
+$appeal = $block->getItem();
+?>
+<div class="ncu_appeal_block">
+    <div class="ncu_user_info">
+        <p class="ncu_user_name"><?php echo $appeal['username']; ?> | <?php echo $appeal['email']; ?></p>
+        <p class="ncu_date"><?php echo $appeal['created_at']; ?></p>
+    </div>
+    <div class="ncu_content">
+        <p><?php echo $appeal['comment'] ?></p>
+    </div>
+</div>
+<hr>

@@ -1,0 +1,11 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <!--<route id="contact_route" frontName="contact">
+            <module name="Magento_Contact" before="Magento_Backend"  />
+        </route>-->
+        <route id="appeal" frontName="appeal">
+            <module name="AD_NewContactUs" before="AD_NewContactUs" />
+        </route>
+    </router>
+</config>

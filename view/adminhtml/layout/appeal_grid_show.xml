@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="formkey"/>
+    <head>
+        <title>Appeal</title>
+        <css src="AD_NewContactUs/css/ncu_styles.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block
+                    class="AD\NewContactUs\Block\Adminhtml\AppealBlock"
+                    name="Overview"
+                    template="AD_NewContactUs::appealtemplate/appeal.phtml" />
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block
+                    class="AD\NewContactUs\Block\Adminhtml\AppealBlock"
+                    name="AppealShow"
+                    template="AD_NewContactUs::appeal.phtml">
+
+                <container name="form.additional.info" label="Form Additional Info"/>
+
+            </block>
+        </referenceContainer>
+
+    </body>
+</page>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="AD_NewContactUs::appeal"
+             title="Appeals" translate="title" module="AD_NewContactUs"
+             sortOrder="15"
+             resource="AD_NewContactUs::appeal"/>
+        <add id="AD_NewContactUs::appeal_grid"
+             title="Grid" translate="title" module="AD_NewContactUs"
+             sortOrder="100" parent="AD_NewContactUs::appeal"
+             action="appeal/grid"
+             resource="AD_NewContactUs::appeal_grid"/>
+
+        <!--<add id="AD_NewContactUs::appealShow"
+             title="Appeal Show"
+             module="AD_NewContactUs"
+             parent="AD_NewContactUs::appeal_grid"
+             action="appeal/grid/show/id/*"
+             resource="AD_NewContactUs::appealShow"/>-->
+    </menu>
+
+
+</config>

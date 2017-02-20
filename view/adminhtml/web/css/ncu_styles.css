@@ -1,0 +1,41 @@
+.ncu_user_name{
+    font-weight: 700;
+    font-size: 16pt;
+    margin: 0px;
+}
+.ncu_date{
+    color: #b2b9c2;
+    font-size: 12pt;
+}
+
+.ncu_content{
+    font-weight: 600;
+    font-size: 22pt;
+    font-variant: small-caps;
+    padding: 10px;
+    margin: 4px;
+    background: rgb(255, 255, 245);
+    border: 0.5px solid rgba(246, 246, 33, 0.1);
+}
+.ncu_user_info{
+    padding: 5px;
+}
+
+.ncu_appeal_block{
+    padding: 0px;
+    margin-bottom: 10px;
+}
+.ncu_text_area{
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Century Gothic;
+}
+
+.ncu_dd{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}

@@ -1,0 +1,25 @@
+<?php
+$appeal = $block->getItem();
+?>
+
+<form action="<?php echo $block->getFormAction();?>" method="post">
+
+    <textarea name="answer" class="ncu_text_area" placeholder="Ответ" cols="5" rows="3"></textarea>
+
+    <input name="dEmail" type="email" value="<?php echo $appeal['email'];?>" style="display: none;" />
+
+    <select class="ncu_dd" name="dd_status">
+        <option value="0">Не решено</option>
+        <option value="1">Решено</option>
+    </select>
+
+    <div class="actions-toolbar">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value="" />
+            <button type="submit" title="<?php /* @escapeNotVerified */ echo __('Submit') ?>" class="action submit primary">
+                <span><?php /* @escapeNotVerified */ echo __('Submit') ?></span>
+            </button>
+        </div>
+    </div>
+
+</form>
